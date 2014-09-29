@@ -63,12 +63,12 @@ int main(int argc, char* argv[])
     {
         if (isalpha(i) && !strchr(latin,i) && !strchr(LATIN,i))
         {
-            fputs("Something about error!", stderr);
+            fputs("This is not letter!", stderr);
             exit(1);
         }
         if ((latin[i]!=latin[0]+i) || (LATIN[i]!=LATIN[0]+i))
         {
-            fputs("Wrong code of the letters", stderr);
+            fputs("Wrong code of the letter", stderr);
             exit(1);
         }
     }
